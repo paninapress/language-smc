@@ -1,0 +1,1 @@
+Syntax highlighting to help proofread Sketch Master cheat sheets.
