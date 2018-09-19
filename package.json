@@ -1,0 +1,14 @@
+{
+  "name": "language-smc",
+  "version": "0.0.0",
+  "description": "A better way to proofread for SMC cheatsheets",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://gitlab.com/sketch-master/cs-syntax-highlighter",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
