@@ -7,10 +7,10 @@
   'txt'
 ]
 'patterns': [
-  {
-    'match': '^\\s*@@.*$'
-    'name': 'comment'
-  }
+  # {
+  #   'match': '^\\s*@@.*$'
+  #   'name': 'comment'
+  # }
   # {
   #   'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
   #   'name': 'constant.numeric.smc'
