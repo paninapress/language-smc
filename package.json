@@ -6,7 +6,7 @@
     "language",
     "grammar"
   ],
-  "repository": "https://gitlab.com/sketch-master/cs-syntax-highlighter",
+  "repository": "https://github.com/paninapress/language-smc",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
