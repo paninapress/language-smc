@@ -1,20 +1,62 @@
 @import "ui-variables";
 
 atom-text-editor.editor[data-grammar*="smc"] {
-  .syntax--keyword{
-    // defaults to purple
-  }
-  .syntax--capitalize{
+  // —————————————————————————————————————————————————
+
+  .syntax--capitalize {
     // currently defaults to keyword class
-    // color: @text-color-success;
+    color: @text-color-success;
+    &:after { content: "Typically capitalized"; }
   }
-  .syntax--lowercase{
+  .syntax--lowercase {
     color: @text-color-info;
+    &:after { content: "Typically lowercase"; }
   }
-  .syntax--spacing{
+  .syntax--spacing {
     color: @text-color-warning;
+    &:after { content: "Spaced correctly?"; }
   }
-  .syntax--exception{
+  .syntax--exception {
     color: @text-color-error;
+    &:after { content: "Complicated term"; }
   }
-}
+  .syntax--hyphenated {
+    color: cornflowerblue;
+  }
+
+  // Tooltips explaining the grammar / category of the term
+  .syntax--keyword,
+  .syntax--capitalize,
+  .syntax--lowercase,
+  .syntax--spacing,
+  .syntax--exception {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      bottom: 1.4em;
+      left: 0%;
+      // transform: translate(-50%);
+      padding: .3em 10px .1em;
+      background: #424a56;
+      border-radius: 1em;
+      border-bottom-left-radius: 0;
+      box-shadow: 0 1px 4px 1px #20262d;
+      font-size: .8em;
+      color: white;
+      opacity: 0;
+      transition: .3s;
+      pointer-events: none;
+      z-index: 1;
+    }
+    &:hover:after {
+      opacity: 1;
+    }
+  }
+  .syntax--keyword > .syntax--keyword:after { // keyword within a keyword
+    // bottom: 3.4em;
+    z-index: 2; // cover up the parent keyword
+  }
+
+  // —————————————————————————————————————————————————
+} // END: atom-text-editor.editor[data-grammar*="smc"]
