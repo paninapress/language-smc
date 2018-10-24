@@ -13,363 +13,363 @@
   # }
   # {
   #   'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
-  #   'name': 'constant.numeric.smc'
+  #   'name': 'constant.numeric'
   # }
   {
     'match': '(a|A)+rtboard'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(b|B)+ack+\\ +(l|L)ink'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(b|B)ack(l|L)ink'
-    'name': 'spacing.keyword.smc'
+    'name': 'spacing'
   }
   {
     'match': '((b|B)+ézier)+(\\ |)+(c|C)urve'
     'captures':
         '1':
-            'name': 'capitalize.keyword.smc'
-     'name': 'lowercase.keyword.smc'
+            'name': 'capitalize'
+     'name': 'lowercase'
   }
   {
     'match': '(b|B)+éziercurve'
-    'name': 'spacing.keyword.smc'
+    'name': 'spacing'
   }
   {
     'match': '(b|B)+ezier+(\\ |)+curve'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(b|B)+lend+\\ +(m|M)ode'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(b|B)+lend+(m|M)ode'
-    'name': 'spacing.keyword.smc'
+    'name': 'spacing'
   }
   {
     'match': '(b|B)+lending'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(n|N)ormal'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(m|M)ultiply'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(o|O)verlay'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(s|S)oft+\\ +(l|L)ight'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(s|S)oft(l|L)ight'
-    'name': 'spacing.keyword.smc'
+    'name': 'spacing'
   }
   {
     'match': '((b|B)oolean)+\\ +(o|O)peration'
     'captures':
         '1':
-            'name': 'capitalize.keyword.smc'
-    'name': 'lowercase.keyword.smc'
+            'name': 'capitalize'
+    'name': 'lowercase'
   }
   {
     'match': '((b|B)oolean)+(o|O)peration'
-    'name': 'spacing.keyword.smc'
+    'name': 'spacing'
   }
   {
     'match': '(u|U)nion'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(s|S)ubtract'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(i|I)ntersect'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(d|D)ifference'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(b|B)order'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(c|C)anvas'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(c|C)ode+(\\ |)+(p|P)en'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(c|C)olor+\\ +(p|P)icker'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(c|C)olor+(p|P)icker'
-    'name': 'spacing.keyword.smc'
+    'name': 'spacing'
   }
   {
     'match': '((e|E)dit)+\\ +(m|M)ode'
     'captures':
         '1':
-            'name': 'capitalize.keyword.smc'
-    'name': 'lowercase.keyword.smc'
+            'name': 'capitalize'
+    'name': 'lowercase'
   }
   {
     'match': '((e|E)dit)+\\ +(t|T)ool'
     'captures':
         '1':
-            'name': 'capitalize.keyword.smc'
-    'name': 'lowercase.keyword.smc'
+            'name': 'capitalize'
+    'name': 'lowercase'
   }
   {
     'match': '(e|E)xport\\ (s|S)etting'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(e|E)xport'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(e|E)yedropper'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(f|F)ilename'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(f|F)ile\\ name'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(f|F)ill'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(f|F)ill\\ rule'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(f|F)ill-rule'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(f|F)illrule'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(g|G)esture'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(g|G)roup'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(g|G)uide'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(h|H)otspot'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(i|I)nner\\ (s|S)hadow'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(i|I)nspector'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(i|I)nstance'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(l|L)ayer\\ (l|L)ist'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(l|L)ayer'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(l|L)ock'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '((m|M)aster)+\\ +(a|A)rtboard'
     'captures':
         '1':
-            'name': 'lowercase.keyword.smc'
-    'name': 'capitalize.keyword.smc'
+            'name': 'lowercase'
+    'name': 'capitalize'
   }
   {
     'match': '(o|O)verride(s|\\ )'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(p|P)age'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(p|P)en\\ '
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(r|R)ectangle'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(r|R)adius'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(r|R)ight-click'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(r|R)ight\\ click'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(r|R)uler'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(s|S)creen'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '((s|S)croll)+\\ +(g|G)roup'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(s|S)croll(g|G)roup'
-    'name': 'spacing.keyword.smc'
+    'name': 'spacing'
   }
   {
     'match': '(s|S)hadow'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(s|S)hared\\ (s|S)tyle'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
 
   {
     'match': '((s|S)lice)+\\ +(t|T)ool'
     'captures':
         '1':
-            'name': 'capitalize.keyword.smc'
-    'name': 'lowercase.keyword.smc'
+            'name': 'capitalize'
+    'name': 'lowercase'
   }
   {
     'match': '(s|S)lice'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(s|S)tart+.+(e|E)nd+\\ +(s|S)+creen'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '((s|S)tart+.+(e|E)nd)+\\ +(s|S)+tate(s|\\ )'
     'captures':
         '1':
-            'name': 'capitalize.keyword.smc'
-    'name': 'lowercase.keyword.smc'
+            'name': 'capitalize'
+    'name': 'lowercase'
   }
   {
     'match': '(s|S)tart+\\ +(p|P)oint'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(s|S)ub-shape'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(s|S)ub-path'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(s|S)ub+\\ +(s|S)hape'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(s|S)ymbol'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(t|T)ext+\\ +layer'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(t|T)ext+\\ +(s|S)tyle'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '((t|T)ext)+\\ +(t|T)ool'
     'captures':
         '1':
-            'name': 'capitalize.keyword.smc'
-    'name': 'lowercase.keyword.smc'
+            'name': 'capitalize'
+    'name': 'lowercase'
   }
   {
     'match': '(t|T)ransition+\\ +(d|D)esigner'
-    'name': 'capitalize.keyword.smc'
+    'name': 'capitalize'
   }
   {
     'match': '(t|T)ransition+\\ +(l|L)ist'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(u|U)nplug'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(u|U)n-plug'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(v|V)iew(b|B)ox'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(c|C)op(y|ying|ied)\\ &\\ (p|P)ast(e|ing|ed)'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(c|C)op(y|ying|ied)\\ and\\ (p|P)ast(e|ing|ed)'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(d|D)ra(g|gging|gged)\\ &\\ (d|D)ro(p|pping|pped)'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(d|D)ra(g|gging|gged)\\ and\\ (d|D)ro(p|pping|pped)'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
   {
     'match': '(c|C)lick(ing|ed|)\\ &\\ (d|D)ra(g|gging|gged)'
-    'name': 'lowercase.keyword.smc'
+    'name': 'lowercase'
   }
   {
     'match': '(c|C)lick(ing|ed|)\\ and\\ (d|D)ra(g|gging|gged)'
-    'name': 'exception.keyword.smc'
+    'name': 'exception'
   }
 ]
