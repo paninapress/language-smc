@@ -1,32 +1,34 @@
 @import "ui-variables";
 
+
+// Custom Colors (The SMC Theme)
+@smc-color__light-gray: #5D687D;
+@smc-color__faint-gray: fade(#A4A5AB, 50%);
+
+// Color Assignments
+  // Markdown
+  @smc-color__code: @smc-color__light-gray;
+  // Cheat Sheet
+  @smc-color__cs-graphic: @smc-color__faint-gray;
+  @smc-color__key-shortcut: @smc-color__light-gray;
+  // Grammar
+  @smc-color__capitalize: @text-color-success;
+  @smc-color__lowercase: @text-color-info;
+  @smc-color__spacing: @text-color-warning;
+  @smc-color__exception: @text-color-error;
+  // Status
+  @smc-color__typo-dots: red;
+  @smc-color__uncertain-wave: #ab35ff;
+  @smc-color__correct-underline: #6ABD29;
+  // UI
+  @smc-color__tooltip-bg: mix( @syntax-background-color, #9BAFCC, 75% );
+  @smc-color__tooltip-text-color: contrast( @smc-color__tooltip-bg );
+  @smc-color__tooltip-shadow-color: fade( darken(@syntax-background-color, 45%) , 6%);
+
+
+
 atom-text-editor.editor[data-grammar*="smc"] {
   // —————————————————————————————————————————————————
-
-  // Custom Colors (The SMC Theme)
-  @smc-color__light-gray: #5D687D;
-  @smc-color__faint-gray: fade(#A4A5AB, 50%);
-
-  // Color Assignments
-    // Markdown
-    @smc-color__code: @smc-color__light-gray;
-    // Cheat Sheet
-    @smc-color__cs-graphic: @smc-color__faint-gray;
-    @smc-color__key-shortcut: @smc-color__light-gray;
-    // Grammar
-    @smc-color__capitalize: @text-color-success;
-    @smc-color__lowercase: @text-color-info;
-    @smc-color__spacing: @text-color-warning;
-    @smc-color__exception: @text-color-error;
-    // Status
-    @smc-color__typo-dots: red;
-    @smc-color__uncertain-wave: #ab35ff;
-    @smc-color__correct-underline: #6ABD29;
-    // UI
-    @smc-color__tooltip-bg: mix( @syntax-background-color, #9BAFCC, 75% );
-    @smc-color__tooltip-text-color: contrast( @smc-color__tooltip-bg );
-    @smc-color__tooltip-shadow-color: fade( darken(@syntax-background-color, 45%) , 6%);
-
 
   // Atom Editor
   .lines { // Center the lines in the editor window
