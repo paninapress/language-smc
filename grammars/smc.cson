@@ -27,20 +27,21 @@
     'match': '(b|B)ack(l|L)ink'
     'name': 'spacing'
   }
+  # Bézier
   {
-    'match': '((b|B)+ézier)+(\\ |)+(c|C)urve'
-    'captures':
-        '1':
-            'name': 'capitalize'
-     'name': 'lowercase'
+    'match': 'Bézier((\ )curve)?((\ )handle)?'
+    'name': 'correct'
   }
   {
-    'match': '(b|B)+éziercurve'
+    'match': '(b|B)+(é|e)zier(((c|C)urve)|((h|H)andle))'
     'name': 'spacing'
   }
   {
-    'match': '(b|B)+ezier+(\\ |)+curve'
-    'name': 'exception'
+    'match': '((b|B)+(é|e)zier)((\ |)(c|C)urve)?((\ |)(h|H)andle)?'
+    'captures':
+        '1':
+            'name': 'capitalize.typo'
+     'name': 'lowercase.typo'
   }
   {
     'match': '(b|B)+lend+\\ +(m|M)ode'
