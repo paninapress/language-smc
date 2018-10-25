@@ -3,7 +3,30 @@
 atom-text-editor.editor[data-grammar*="smc"] {
   // —————————————————————————————————————————————————
 
-  @comment-gray: #5D687D;
+  // Custom Colors (The SMC Theme)
+  @smc-color__light-gray: #5D687D;
+  @smc-color__faint-gray: fade(#A4A5AB, 50%);
+
+  // Color Assignments
+    // Markdown
+    @smc-color__code: @smc-color__light-gray;
+    // Cheat Sheet
+    @smc-color__cs-graphic: @smc-color__faint-gray;
+    @smc-color__key-shortcut: @smc-color__light-gray;
+    // Grammar
+    @smc-color__capitalize: @text-color-success;
+    @smc-color__lowercase: @text-color-info;
+    @smc-color__spacing: @text-color-warning;
+    @smc-color__exception: @text-color-error;
+    // Status
+    @smc-color__typo-dots: red;
+    @smc-color__uncertain-wave: #ab35ff;
+    @smc-color__correct-underline: #6ABD29;
+    // UI
+    @smc-color__tooltip-bg: mix( @syntax-background-color, #9BAFCC, 75% );
+    @smc-color__tooltip-text-color: contrast( @smc-color__tooltip-bg );
+    @smc-color__tooltip-shadow-color: fade( darken(@syntax-background-color, 45%) , 6%);
+    
 
   // Atom Editor
   .lines { // Center the lines in the editor window
@@ -18,7 +41,7 @@ atom-text-editor.editor[data-grammar*="smc"] {
 
   // Basic Markdown Syntax
   .syntax--md-code {
-    color: @comment-gray;
+    color: @smc-color__code;
   }
   .syntax--md-bold {
     font-weight: 600;
@@ -47,7 +70,7 @@ atom-text-editor.editor[data-grammar*="smc"] {
   .syntax--cs-graphic {
     position: relative;
     font-style: italic;
-    color: rgba(255, 255, 255, 0.3);
+    color: @smc-color__cs-graphic;
 
     &:after {
       content: "";
@@ -57,43 +80,43 @@ atom-text-editor.editor[data-grammar*="smc"] {
       left: -4px;
       right: 4px;
       border-radius: 4px;
-      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+      box-shadow: inset 0 0 0 1px @smc-color__cs-graphic;
       pointer-events: none;
     }
   }
   .syntax--cs-shortcut {
-    color: @comment-gray;
+    color: @smc-color__key-shortcut;
   }
 
   // Grammatical Groups / Qualities
   .syntax--capitalize {
     // currently defaults to keyword class
-    color: @text-color-success;
+    color: @smc-color__capitalize;
     &:after { content: "Typically capitalized"; }
   }
   .syntax--lowercase {
-    color: @text-color-info;
+    color: @smc-color__lowercase;
     &:after { content: "Typically lowercase"; }
   }
   .syntax--spacing {
-    color: @text-color-warning;
+    color: @smc-color__spacing;
     &:after { content: "Spaced correctly?"; }
   }
   .syntax--exception {
-    color: @text-color-error;
+    color: @smc-color__exception;
     &:after { content: "Complicated term"; }
   }
   .syntax--hyphenated {
     color: cornflowerblue;
   }
-  
+
 
   // Correct Status
   @typo-dot-size: .28em;
   @uncertain-wave-size: .4em;
   .syntax--typo {
     padding-bottom: 3px;
-  	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 6 4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='red' d='M1 0 3 0 4 2 3 4 1 4 0 2z'/%3E%3C/svg%3E");
+  	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 6 4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='@{smc-color__typo-dots}' d='M1 0 3 0 4 2 3 4 1 4 0 2z'/%3E%3C/svg%3E");
   	background-size: @typo-dot-size; // size of the dots
   	background-repeat: repeat-x;
   	background-position: 0 100%;
@@ -101,11 +124,11 @@ atom-text-editor.editor[data-grammar*="smc"] {
   }
   .syntax--correct {
     padding-bottom: 1px;
-  	border-bottom: 1px #6ABD29 solid;
+  	border-bottom: 1px solid @smc-color__correct-underline;
   }
   .syntax--uncertain {
     padding-bottom: 3px;
-  	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 4'%3E%3Cpath fill='none' stroke='#ab35ff' d='M-.1 1.5H0l3 2h1l3-2h1' /%3E%3C/svg%3E");
+  	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 4'%3E%3Cpath fill='none' stroke='@{smc-color__uncertain-wave}' d='M-.1 1.5H0l3 2h1l3-2h1' /%3E%3C/svg%3E");
   	background-size: .6em; // size of the dots
   	background-repeat: repeat-x;
   	background-position: 0 100%;
@@ -131,12 +154,12 @@ atom-text-editor.editor[data-grammar*="smc"] {
       left: 0%;
       // transform: translate(-50%);
       padding: .3em 10px .1em;
-      background: #424a56;
+      background: @smc-color__tooltip-bg;
       border-radius: 1em;
       border-bottom-left-radius: 0;
-      box-shadow: 0 1px 4px 1px #20262d;
+      box-shadow: 0 1px 2px 1px @smc-color__tooltip-shadow-color;
       font-size: .8em;
-      color: white;
+      color: @smc-color__tooltip-text-color;
       opacity: 0;
       transition: .3s;
       pointer-events: none;
