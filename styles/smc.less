@@ -26,7 +26,7 @@ atom-text-editor.editor[data-grammar*="smc"] {
     @smc-color__tooltip-bg: mix( @syntax-background-color, #9BAFCC, 75% );
     @smc-color__tooltip-text-color: contrast( @smc-color__tooltip-bg );
     @smc-color__tooltip-shadow-color: fade( darken(@syntax-background-color, 45%) , 6%);
-    
+
 
   // Atom Editor
   .lines { // Center the lines in the editor window
@@ -129,7 +129,7 @@ atom-text-editor.editor[data-grammar*="smc"] {
   .syntax--uncertain {
     padding-bottom: 3px;
   	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 4'%3E%3Cpath fill='none' stroke='@{smc-color__uncertain-wave}' d='M-.1 1.5H0l3 2h1l3-2h1' /%3E%3C/svg%3E");
-  	background-size: .6em; // size of the dots
+  	background-size: 8px; // size of the waves
   	background-repeat: repeat-x;
   	background-position: 0 100%;
   }
