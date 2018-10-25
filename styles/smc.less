@@ -5,6 +5,17 @@ atom-text-editor.editor[data-grammar*="smc"] {
 
   @comment-gray: #5D687D;
 
+  // Atom Editor
+  .lines { // Center the lines in the editor window
+    padding-left: ~"calc(48vw - 40ch)";
+    // Explanation:
+    //  - move over 50% of the viewport width
+    //  - move back by 40 characters (assumes 80 char soft wrap)
+  }
+  .wrap-guide {
+    opacity: 0;
+  }
+
   // Basic Markdown Syntax
   .syntax--md-code {
     color: @comment-gray;

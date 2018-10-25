@@ -5,3 +5,6 @@
   'Method documentation':
     'prefix': 'doc'
     'body': '@@ ${1:method} - ${2:description}'
+  'editor':
+    'softWrap': true,
+    'softWrapAtPreferredLineLength': true
