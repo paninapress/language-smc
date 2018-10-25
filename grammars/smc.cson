@@ -17,360 +17,360 @@
   # }
   {
     'match': '(a|A)+rtboard'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(b|B)+ack+\\ +(l|L)ink'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(b|B)ack(l|L)ink'
-    'name': 'spacing'
+    'name': 'spacing.smc'
   }
   # Bézier
   {
     'match': 'Bézier((\ )curve)?((\ )handle)?'
-    'name': 'correct'
+    'name': 'correct.smc'
   }
   {
     'match': '(b|B)+(é|e)zier(((c|C)urve)|((h|H)andle))'
-    'name': 'spacing'
+    'name': 'spacing.smc'
   }
   {
     'match': '((b|B)+(é|e)zier)((\ |)(c|C)urve)?((\ |)(h|H)andle)?'
     'captures':
         '1':
-            'name': 'capitalize.typo'
-     'name': 'lowercase.typo'
+            'name': 'capitalize.typo.smc'
+     'name': 'lowercase.typo.smc'
   }
   {
     'match': '(b|B)+lend+\\ +(m|M)ode'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(b|B)+lend+(m|M)ode'
-    'name': 'spacing'
+    'name': 'spacing.smc'
   }
   {
     'match': '(b|B)+lending'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(n|N)ormal'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(m|M)ultiply'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(o|O)verlay'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(s|S)oft+\\ +(l|L)ight'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(s|S)oft(l|L)ight'
-    'name': 'spacing'
+    'name': 'spacing.smc'
   }
   {
     'match': '((b|B)oolean)+\\ +(o|O)peration'
     'captures':
         '1':
-            'name': 'capitalize'
-    'name': 'lowercase'
+            'name': 'capitalize.smc'
+    'name': 'lowercase.smc'
   }
   {
     'match': '((b|B)oolean)+(o|O)peration'
-    'name': 'spacing'
+    'name': 'spacing.smc'
   }
   {
     'match': '(u|U)nion'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(s|S)ubtract'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(i|I)ntersect'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(d|D)ifference'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(b|B)order'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(c|C)anvas'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(c|C)ode+(\\ |)+(p|P)en'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(c|C)olor+\\ +(p|P)icker'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(c|C)olor+(p|P)icker'
-    'name': 'spacing'
+    'name': 'spacing.smc'
   }
   {
     'match': '((e|E)dit)+\\ +(m|M)ode'
     'captures':
         '1':
-            'name': 'capitalize'
-    'name': 'lowercase'
+            'name': 'capitalize.smc'
+    'name': 'lowercase.smc'
   }
   {
     'match': '((e|E)dit)+\\ +(t|T)ool'
     'captures':
         '1':
-            'name': 'capitalize'
-    'name': 'lowercase'
+            'name': 'capitalize.smc'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(e|E)xport\\ (s|S)etting'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(e|E)xport'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(e|E)yedropper'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(f|F)ilename'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(f|F)ile\\ name'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(f|F)ill'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(f|F)ill\\ rule'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(f|F)ill-rule'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(f|F)illrule'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(g|G)esture'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(g|G)roup'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(g|G)uide'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(h|H)otspot'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(i|I)nner\\ (s|S)hadow'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(i|I)nspector'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(i|I)nstance'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(l|L)ayer\\ (l|L)ist'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(l|L)ayer'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(l|L)ock'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '((m|M)aster)+\\ +(a|A)rtboard'
     'captures':
         '1':
-            'name': 'lowercase'
-    'name': 'capitalize'
+            'name': 'lowercase.smc'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(o|O)verride(s|\\ )'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(p|P)age'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(p|P)en\\ '
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(r|R)ectangle'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(r|R)adius'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(r|R)ight-click'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(r|R)ight\\ click'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(r|R)uler'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(s|S)creen'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '((s|S)croll)+\\ +(g|G)roup'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(s|S)croll(g|G)roup'
-    'name': 'spacing'
+    'name': 'spacing.smc'
   }
   {
     'match': '(s|S)hadow'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(s|S)hared\\ (s|S)tyle'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
 
   {
     'match': '((s|S)lice)+\\ +(t|T)ool'
     'captures':
         '1':
-            'name': 'capitalize'
-    'name': 'lowercase'
+            'name': 'capitalize.smc'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(s|S)lice'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(s|S)tart+.+(e|E)nd+\\ +(s|S)+creen'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '((s|S)tart+.+(e|E)nd)+\\ +(s|S)+tate(s|\\ )'
     'captures':
         '1':
-            'name': 'capitalize'
-    'name': 'lowercase'
+            'name': 'capitalize.smc'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(s|S)tart+\\ +(p|P)oint'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(s|S)ub-shape'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(s|S)ub-path'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(s|S)ub+\\ +(s|S)hape'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(s|S)ymbol'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(t|T)ext+\\ +layer'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(t|T)ext+\\ +(s|S)tyle'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '((t|T)ext)+\\ +(t|T)ool'
     'captures':
         '1':
-            'name': 'capitalize'
-    'name': 'lowercase'
+            'name': 'capitalize.smc'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(t|T)ransition+\\ +(d|D)esigner'
-    'name': 'capitalize'
+    'name': 'capitalize.smc'
   }
   {
     'match': '(t|T)ransition+\\ +(l|L)ist'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(u|U)nplug'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(u|U)n-plug'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(v|V)iew(b|B)ox'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(c|C)op(y|ying|ied)\\ &\\ (p|P)ast(e|ing|ed)'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(c|C)op(y|ying|ied)\\ and\\ (p|P)ast(e|ing|ed)'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(d|D)ra(g|gging|gged)\\ &\\ (d|D)ro(p|pping|pped)'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(d|D)ra(g|gging|gged)\\ and\\ (d|D)ro(p|pping|pped)'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
   {
     'match': '(c|C)lick(ing|ed|)\\ &\\ (d|D)ra(g|gging|gged)'
-    'name': 'lowercase'
+    'name': 'lowercase.smc'
   }
   {
     'match': '(c|C)lick(ing|ed|)\\ and\\ (d|D)ra(g|gging|gged)'
-    'name': 'exception'
+    'name': 'exception.smc'
   }
 ]
