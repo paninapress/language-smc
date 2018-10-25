@@ -86,6 +86,36 @@ atom-text-editor.editor[data-grammar*="smc"] {
   .syntax--hyphenated {
     color: cornflowerblue;
   }
+  
+
+  // Correct Status
+  @typo-dot-size: .28em;
+  @uncertain-wave-size: .4em;
+  .syntax--typo {
+    padding-bottom: 3px;
+  	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 6 4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='red' d='M1 0 3 0 4 2 3 4 1 4 0 2z'/%3E%3C/svg%3E");
+  	background-size: @typo-dot-size; // size of the dots
+  	background-repeat: repeat-x;
+  	background-position: 0 100%;
+  	animation: moveTypoUnderline .8s infinite linear;
+  }
+  .syntax--correct {
+    padding-bottom: 1px;
+  	border-bottom: 1px #6ABD29 solid;
+  }
+  .syntax--uncertain {
+    padding-bottom: 3px;
+  	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 4'%3E%3Cpath fill='none' stroke='#ab35ff' d='M-.1 1.5H0l3 2h1l3-2h1' /%3E%3C/svg%3E");
+  	background-size: .6em; // size of the dots
+  	background-repeat: repeat-x;
+  	background-position: 0 100%;
+  }
+  // Animation Keyframes
+  @keyframes moveTypoUnderline {
+  	0% { background-position: 0 100%; }
+  	100% { background-position: @typo-dot-size 100%; }
+  }
+
 
   // Tooltips explaining the grammar / category of the term
   .syntax--keyword,
