@@ -2,25 +2,35 @@
 
 
 // Custom Colors (The SMC Theme)
-@smc-color__light-gray: #5D687D;
-@smc-color__faint-gray: fade(#A4A5AB, 50%);
+  @smc-color__butter: fade(#FFAD33, 98%);
+  @smc-color__green: #76CC3D;
+  @smc-color__turquoise: #00B3BD;
+  @smc-color__blue: fade(#5C92FF, 95%);
+  @smc-color__purple: #ab35ff;
+  @smc-color__rose: fade(#F752DE, 96%);
+  @smc-color__red: #FC4032;
+  @smc-color__dynamic-gray: mix( contrast( @syntax-background-color ), #7F8CA3, 31% );
+    // - take the editor bg, choose black or white based on highest contrast
+    // - mix that black or white with a special gray color
+  @smc-color__faded-gray: fade(#8998B3, 58%);
 
 // Color Assignments
   // Markdown
-  @smc-color__code: @smc-color__light-gray;
+  @smc-color__code: @smc-color__faded-gray;
   // Cheat Sheet
-  @smc-color__cs-graphic: @smc-color__faint-gray;
-  @smc-color__key-shortcut: @smc-color__light-gray;
+  @smc-color__cs-graphic: @smc-color__faded-gray;
+  @smc-color__key-shortcut: @smc-color__faded-gray;
   // Grammar
-  @smc-color__capitalize: @text-color-success;
-  @smc-color__lowercase: @text-color-info;
-  @smc-color__spacing: @text-color-warning;
-  @smc-color__exception: @text-color-error;
+  @smc-color__capitalize: @smc-color__blue;
+  @smc-color__lowercase: @smc-color__turquoise;
+  @smc-color__spacing: @smc-color__rose;
+  @smc-color__exception: @smc-color__butter;
   // Status
-  @smc-color__typo-dots: red;
-  @smc-color__uncertain-wave: #ab35ff;
-  @smc-color__correct-underline: #6ABD29;
+  @smc-color__typo-dots: @smc-color__red;
+  @smc-color__uncertain-wave: @smc-color__purple;
+  @smc-color__correct-underline: @smc-color__green;
   // UI
+  @smc-color__editor-text: @smc-color__dynamic-gray;
   @smc-color__tooltip-bg: mix( @syntax-background-color, #9BAFCC, 75% );
   @smc-color__tooltip-text-color: contrast( @smc-color__tooltip-bg );
   @smc-color__tooltip-shadow-color: fade( darken(@syntax-background-color, 45%) , 6%);
