@@ -23,7 +23,7 @@
     'name': 'md-heading.md-heading-3.smc'
     'captures':
       '1':
-        'name': 'md-heading.md-heading-3.marker.comment.smc'
+        'name': 'md-heading.md-heading-3.marker.smc'
     'patterns': [
       {
         'include': '$self'
@@ -36,7 +36,7 @@
     'name': 'md-heading.md-heading-2.smc'
     'captures':
       '1':
-        'name': 'md-heading.md-heading-2.marker.comment.smc'
+        'name': 'md-heading.md-heading-2.marker.smc'
     'patterns': [
       {
         'include': '$self'
@@ -49,7 +49,7 @@
     'name': 'md-heading.md-heading-1.smc'
     'captures':
       '1':
-        'name': 'md-heading.md-heading-1.marker.comment.smc'
+        'name': 'md-heading.md-heading-1.marker.smc'
     'patterns': [
       {
         'include': '$self'
