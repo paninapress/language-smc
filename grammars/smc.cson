@@ -77,6 +77,12 @@
     'name': 'md-italic'
   }
 
+  ## General Syntax & Orthography (this might be better below Tech Terminology)
+  { # two or three spaces after a period
+    'match': '\\.\\ \\ (\\ )?'
+    'name': 'uncertain'
+  }
+
   ## Cheat Sheet Markdown Additions
   { # Graphics
     'begin': '@@'
