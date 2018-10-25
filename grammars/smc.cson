@@ -17,7 +17,46 @@
   # }
 
   ## A Few Pieces of Markdown
-  { # Keyboard Shortcuts
+  { # H3 - taken from Github markdown
+    'begin': '^(#{3})(\\s*)'
+    'end': '$'
+    'name': 'md-heading.md-heading-3.smc'
+    'captures':
+      '1':
+        'name': 'md-heading.md-heading-3.marker.comment.smc'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  { # H2 - taken from Github markdown
+    'begin': '^(#{2})(\\s*)'
+    'end': '$'
+    'name': 'md-heading.md-heading-2.smc'
+    'captures':
+      '1':
+        'name': 'md-heading.md-heading-2.marker.comment.smc'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  { # H1 - taken from Github markdown
+    'begin': '^(#{1})(\\s*)'
+    'end': '$'
+    'name': 'md-heading.md-heading-1.smc'
+    'captures':
+      '1':
+        'name': 'md-heading.md-heading-1.marker.comment.smc'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  { # Code
     'begin': '\\`'
     'end': '\\`'
     'name': 'md-code'
