@@ -190,12 +190,20 @@
     'name': 'exception.smc'
   }
   {
+    'match': 'color\\ picker'
+    'name': 'lowercase.correct.smc'
+  }
+  {
+    'match': 'Color\\ picker'
+    'name': 'lowercase.uncertain.smc'
+  }
+  {
     'match': '(c|C)olor+\\ +(p|P)icker'
-    'name': 'lowercase.smc'
+    'name': 'lowercase.typo.smc'
   }
   {
     'match': '(c|C)olor+(p|P)icker'
-    'name': 'spacing.smc'
+    'name': 'spacing.typo.smc'
   }
   {
     'match': '((e|E)dit)+\\ +(m|M)ode'
